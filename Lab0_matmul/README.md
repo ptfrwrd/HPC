@@ -9,7 +9,7 @@
 <tr><th>Size</th><th>CPU time</th><th>GPU time</th><th>Acceleration</th></tr>
 </thead>
 <tbody>
-<tr><td>128</td><td> 1.5273</td><td>0.0041</td><td>372.579</td></tr>
+<tr><td>128</td><td> 1.5594</td><td>0.0016</td><td>968.4107</td></tr>
 <tr><td>256</td><td> 11.5251</td><td>0.0032</td><td>3599.9234</td></tr>
 <tr><td>512</td><td> 93.4048</td><td>0.0113</td><td>8254.5239</td></tr>
 <tr><td>1024</td><td> 859.1499</td><td>0.0493</td><td>17435.5929</td></tr>
