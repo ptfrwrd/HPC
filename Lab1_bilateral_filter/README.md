@@ -4,19 +4,38 @@
 **Время GPU**:  0.005403280258178711
 **CPU/GPU**: 14914.78802453338
 
-## примеры изображений:
-(размеры крупнее лежат в репозитории)
-при детальном рассмотрении видно размытие контура рук.
+# Иные способы подсчёта времени:
 
+blocksize (1,1,1)
 
-**Исходное:**
-<br>
-<img src="https://github.com/ptfrwrd/HPC/blob/main/Lab1_bilateral_filter/input.jpg" alt="original" height='500'>
-<br>
-**CPU:**
-<br>
-<img src="https://github.com/ptfrwrd/HPC/blob/main/Lab1_bilateral_filter/res_cpu.bmp" alt="cpu" height='500'>
-<br>
-**GPU:**
-<br>
-<img src="https://github.com/ptfrwrd/HPC/blob/main/Lab1_bilateral_filter/res_gpu.bmp" alt="gpu" height='500'>
+```%load_ext autotime```
+CPU:  23.7 s
+GPU: 53 ms
+CPU/GPU: ~400
+
+```pycuda.driver```
+CPU: 23.66973046875
+GPU: 0.04375600051879883
+CPU/GPU: ~575
+
+```process_time()```
+CPU: 23.317948978999993
+GPU: 0.04540985200000591
+CPU/GPU: 513
+
+blocksize (2,2,1)
+
+```%load_ext autotime```
+CPU:  23.7 s
+GPU: 24.2 ms ms
+CPU/GPU: ~980
+
+```pycuda.driver```
+CPU: 23.66973046875
+GPU: 0.013681695938110352
+CPU/GPU: ~1730
+
+```process_time()```
+CPU: 23.317948978999993
+GPU: 0.014904685000004747
+CPU/GPU: 1564
